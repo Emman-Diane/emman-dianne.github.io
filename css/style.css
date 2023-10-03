@@ -1,7 +1,9 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'icomoon','Leontyne Signature','Santiago';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/Leontyne Signature/Leontyne Signature.ttf?srf3rx");
+    src: url("../fonts/Santiago.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +13,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -60,11 +62,12 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -849,7 +852,7 @@ form label {
 	margin-bottom: 0px;
 	font-size: 100px;
 	line-height: 1.5;
-	font-family: Santiago;
+	font-family: 'Leontyne Signature', Santiago;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1073,9 +1076,9 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'Leontyne Signature', "Sacramento", serif;
   color: #313131;
-  font-size: 30px;
+  font-size: 50px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1185,12 +1188,14 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 80px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
   color: #313131;
-  font-family: "Sacramento", Arial, serif;
+  font-family:'Leontyne Signature','Santiago';
+   
+	
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
