@@ -6,6 +6,7 @@
     src: url("../fonts/Santiago.otf");
   font-weight: normal;
   font-style: normal;
+
 }
 /* =======================================================
 *
@@ -1854,3 +1855,11 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+.Sponsor-image {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
