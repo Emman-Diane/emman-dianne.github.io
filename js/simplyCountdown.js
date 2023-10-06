@@ -144,8 +144,8 @@
 
         targetTmpDate = new Date(
             parameters.year,
-            parameters.month+1,
-            parameters.day-6,
+            parameters.month +1,
+            parameters.day -6,
             parameters.hours -4,
             parameters.minutes,
             parameters.seconds
