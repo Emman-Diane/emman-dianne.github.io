@@ -91,7 +91,7 @@
 		</div>
 	</nav>
 
-	<header class="fh5co-cover bg-change-1" id="fh5co-header" style=" text-align: center; background-origin: content-box;" role="banner" data-stellar-background-ratio="0.5">
+	<header class="fh5co-cover bg-change-1" id="fh5co-header" style=" text-align: center;" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -104,7 +104,9 @@
 							<h1>Emmanuel &amp; Dianne</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MHVmbzZsNjlpdGZybDgwOGI4YXA5c2VhcmkgZGlhbmV5dXpvbjE1MjRAbQ&amp;tmsrc=dianeyuzon1524%40gmail.com" class="btn btn-default btn-sm">Save the date</a></p>
+							<p>
+							<button class="btn btn-primary"		onclick="location.href='https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MHVmbzZsNjlpdGZybDgwOGI4YXA5c2VhcmkgZGlhbmV5dXpvbjE1MjRAbQ&amp;tmsrc=dianeyuzon1524%40gmail.com';">Save the date</button>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -608,14 +610,14 @@
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
-        month: d.getMonth() + 1,
+        month: d.getMonth(),
         day: d.getDate()
     });
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({
         year: d.getFullYear(),
-        month: d.getMonth() + 1,
+        month: d.getMonth(),
         day: d.getDate(),
         enableUtc: false
     });
