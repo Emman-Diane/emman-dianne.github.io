@@ -1874,3 +1874,16 @@ form label {
 	max-height:180px
 }
 }
+
+@media screen and (max-width: 480px) {      
+ .bg-change-1 {      
+  background-image: url(../images/img_bg_2b.jpg);
+  } 
+}
+@media screen and (min-width: 480px) {      
+ .bg-change-1 {      
+  background-image: url(../images/img_bg_2.jpg);
+  } 
+}
+
+
