@@ -2101,9 +2101,27 @@ form label {
     width: auto\9; /* ie8 */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
+.logo-1 {
+max-height:130px
+}
+.fh5co-heading p {
+  font-size: 14px;
+}
+.min-font1{
+  font-size: 14px;
+}
+}
+	
+@media screen and (max-width: 480px) {
 .logo-1 {
 	max-height:80px
+}
+.fh5co-heading p{
+  font-size: 12px;
+}
+.min-font1{
+  font-size: 12px;
 }
 }
 
@@ -2111,12 +2129,14 @@ form label {
 .logo-1 {
 	max-height:180px
 }
+
 }
 
 @media screen and (max-width: 500px) {      
  .bg-change-1 {      
   background-image: url(../images/img_bg_2b.jpg);
   } 
+
 }
 @media screen and (min-width: 500px) {      
  .bg-change-1 {      
