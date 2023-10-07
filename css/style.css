@@ -2111,6 +2111,12 @@ max-height:130px
 .min-font1{
   font-size: 14px;
 }
+.min-font2 {
+  font-size: 60px;
+}
+.min-font3 {
+  font-size: 30px;
+}
 }
 	
 @media screen and (max-width: 480px) {
@@ -2123,11 +2129,21 @@ max-height:130px
 .min-font1{
   font-size: 12px;
 }
+ .min-font2 {
+  font-size: 40px;
+}
+.min-font3 {
+  font-size: 25px;
+}
+
 }
 
 @media screen and (min-width: 769px) {	
 .logo-1 {
 	max-height:180px
+}
+.min-font3 {
+  font-size: 40px;
 }
 
 }
@@ -2136,13 +2152,24 @@ max-height:130px
  .bg-change-1 {      
   background-image: url(../images/img_bg_2b.jpg);
   } 
+ .box-h300 {      
+  max-height:250px;
+  max-width:100%;
+  } 
 
 }
 @media screen and (min-width: 500px) {      
  .bg-change-1 {      
   background-image: url(../images/img_bg_2.jpg);
   background-origin: content-box;
-  } 
+  }
+ .box-h300 {      
+  max-height:400px;
+  max-width:80%;
+  }
+
 }
+
+
 
 
