@@ -2103,8 +2103,12 @@ form label {
 
 @media screen and (min-width: 480px) {
 .logo-1 {
-max-height:130px
-}
+max-height:150px
+}	
+.img-h1 {
+max-height:150px;
+padding: 5px;
+}	
 .fh5co-heading p {
   font-size: 14px;
 }
@@ -2121,7 +2125,11 @@ max-height:130px
 	
 @media screen and (max-width: 480px) {
 .logo-1 {
-	max-height:80px
+max-height:80px
+}
+.img-h1 {
+max-height:120px;
+padding: 5px;
 }
 .fh5co-heading p{
   font-size: 12px;
@@ -2152,17 +2160,28 @@ max-height:130px
  .bg-change-1 {      
   background-image: url(../images/img_bg_2b.jpg);
   }
+ .heart-1{
+ width:50%;
+}
+	
  .box-div {      
   min-height:350px;
   max-width:100%;
   margin-left: auto;
   margin-right: auto;
-
   }
 	
  .box-map1 {      
   height:350px;
   width:100%;
+  }
+
+ .box-cash1{
+  width:90%;
+  max-height:500px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
   } 
 
 }
@@ -2182,9 +2201,28 @@ max-height:130px
   height:500px;
   width:100%;
   }
-
+.heart-1{
+ width:25%;
+}
+	
+.box-cash1{
+max-width:70%;
+max-height:90%;
+object-fit: contain;
+margin-left: auto;
+margin-right: auto;
+  }
 }
 
+/*SHOW HIDE GIFT*/
 
+.showQR {
+  transition: all 2s linear;
+  display: block;
+}
 
+.hideQR {
+  display: none;
+  opacity: 0;
+}
 

@@ -132,7 +132,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Main Ceremony</h3>
+									<h3>Ceremony</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>2:00 PM</span>
@@ -443,7 +443,82 @@
 		</div>
 	</div>
 
+<!--GIFTS START		-->
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Best Wishes</span>
+						<h2 class="min-font2">Gifts</h2>
+						<p class="min-font1">Your <strong>presence</strong> at our wedding is the greatest gift we could ask for!<br>If you would like to honor us with a gift, a <strong>cash gift</strong> would be very welcome.
+        				</p>
+					</div>
+					<div class="col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 col-lg-7 col-lg-offset-3">
+						<button id="show-hide-btn" class="btn btn-primary btn-block">Send Us A Gift</button>
+					</div>
+				</div>
 
+				<div id="sendcash" class="hideQR" style="background-color:azure">
+					<div class="col-md-12">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+		<div class="box-cash1 testimony-slide active text-center">
+			<img src="images/GCASH.jpg" alt="GCASH QR" style="display: block; object-fit: contain;">
+		</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+		<div class="box-cash1 testimony-slide active text-center">
+			<img src="images/BDO.jpg" alt="BDO QR" style="display: block; object-fit: contain;">
+		</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+		<div class="box-cash1 testimony-slide active text-center">
+			<img src="images/BPI.png" alt="BPI QR" style="display: block; object-fit: contain;">
+		</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--GIFTS END		-->
+<div div class="text-center">
+	<div class="fh5co-heading animate-box">
+
+		<h2 class="min-font2">Dress Code</h2>
+		<p class="min-font1">Dress to Impress, <strong>Strictly Formal!</strong><br>Keep it classy, color rules apply!&nbsp;</p>
+	</div>
+
+		<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 900px; margin-left: auto; margin-right: auto">
+			<div class="animate-box">
+				<img src="images/satin.png" alt="Logo" class="img-h1" style="display: block;">
+				<h2 class="min-font1">White Satin</h2>
+			</div>
+			<div class="animate-box">
+				<img src="images/beige.png" alt="Logo" class="img-h1" style="display: block;">
+				<h2 class="min-font1">Beige</h2>
+			</div>
+			<div class="animate-box">
+				<img src="images/champagne.png" alt="Logo" class="img-h1" style="display: block;">
+				<h2 class="min-font1">Champagne</h2>
+			</div>
+			<div class="animate-box">
+				<img src="images/khaki.png" alt="Logo" class="img-h1" style="display: block;">
+				<h2 class="min-font1">Khaki</h2>
+			</div>
+	
+		</div>	
+</div>
 	
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
@@ -458,7 +533,7 @@
 			<div class="row animate-box" style="height: 100px;">
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-inline">				
-						<div class="col-md-4 col-lg-5 col-lg-offset-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
+						<div class="col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 col-lg-7 col-lg-offset-3">
 							<button class="btn btn-default btn-block" onclick=" window.open('https://forms.gle/GdDnZKAUvsjmnc416','_blank')">I am Attending</button>
 						</div>
 					</form>
@@ -507,8 +582,15 @@
     minutes: 0,
     seconds: 0,
 	enableUtc: true
-};
+	};
+//<!-- SEND CASH JS -->
+	let box = document.getElementById('sendcash'),
+    	btn = document.getElementById('show-hide-btn');
 
+	btn.addEventListener('click', function () {
+  	box.classList.toggle('showQR');
+	}, true);
+	
 // Call simplyCountdown with the new countdownOptions
     simplyCountdown('.simply-countdown-one', countdownOptions);
 </script>
