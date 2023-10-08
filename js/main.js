@@ -228,12 +228,12 @@
 		counterWayPoint();
 	});
 	
+	
 //<!-- SEND CASH JS -->
-	let box = document.getElementById('sendcash'),
-    	btn = document.getElementById('show-hide-btn');
+	var box = document.getElementById('sendcash'),
+		btn = document.getElementById('show-hide-btn');
 
-	btn.addEventListener('click', function () {
-  	box.classList.toggle('showQR');
+	btn.addEventListener('click', function () {box.classList.toggle('showQR');
 	}, true);
 
 }());
