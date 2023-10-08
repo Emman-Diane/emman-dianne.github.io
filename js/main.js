@@ -235,5 +235,6 @@
 
 	btn.addEventListener('click', function () {box.classList.toggle('showQR');
 	}, true);
+	
 
 }());
