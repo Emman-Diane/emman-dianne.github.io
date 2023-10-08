@@ -2012,7 +2012,6 @@ form label {
     width: 50%;
   }
   .box-div {
-    min-height: 350px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -2035,7 +2034,6 @@ form label {
     background-origin: content-box;
   }
   .box-div {
-    min-height: 500px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -2049,7 +2047,6 @@ form label {
   }
   .box-cash1 {
     max-width: 70%;
-    max-height: 90%;
     object-fit: contain;
     margin-left: auto;
     margin-right: auto;
