@@ -27,6 +27,10 @@
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
+<!-- owl Carousel -->
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
 <!-- Quicksand font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,28 +56,29 @@
 
 <!-- Modernizr JS --> 
 <script src="js/modernizr-2.6.2.min.js"></script> 
+<!-- Owl Carousel JS --> 
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+</script>
 <!-- FOR IE9 below --> 
 <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]--> 
-<!-- Auto Play Video -->
 
 </head>
 <body>
 <div class="fh5co-loader"></div>
-<div id="page">
+<div>
   <nav class="fh5co-nav" role="navigation">
     <div class="container">
       <div class="row">
-        <div class="col-xs-2">
-          <div id="fh5co-logo"><a href="index.html"></a></div>
-        </div>
-        <div class="col-xs-10 text-right menu-1">
+        <div  class="text-center">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" >Home</a></li>
             <li><a href="about.html">Story</a></li>
             <li class="has-dropdown"><a href="gallery.html">Gallery</a>
-              <ul class="dropdown">
+              <ul class="dropdown" >
                 <li> <a href="#Pre-wedding">Pre-Wedding</a> </li>
                 <li> <a href="#Adventures">Advetures</a> </li>
                 <li> <a href="#Save-the-Date">Save the Date</a> </li>
@@ -93,7 +98,7 @@
           <div class="display-t">
             <div class="display-tc animate-box" data-animate-effect="fadeIn">
               <div class="col-xs-offset-0 col-xs-12"><a href="index.html"><img class="logo-1" src="images/ED Logo.png" alt="Logo" style="display: block; margin-right:auto; margin-left:auto;"></a><a href="index.html"></a></div>
-              <h1>Gallery</h1>
+              <h1><strong>Gallery</strong></h1>
             </div>
           </div>
         </div>
@@ -108,13 +113,13 @@
         <br>
         </span>
         <h2 class="min-font2">Pre-Wedding</h2>
-        <p class="min-font1">Bago ikasal Piktyur</p>
+        <p class="min-font1">Building a Love Story: When Two Architects Say 'I Do'</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 animate-box">
-        <div class="wrap">
-          <div class="owl-carousel-fullwidth">
+        <div class="container">
+          <div id="gallery-1" class="owl-carousel js-carousel">
             <div class="item">
               <div class="active text-center">
                 <figure> <img src="images/Pre-wedding/PreWed-01.jpg" alt="user"> </figure>
@@ -167,14 +172,14 @@
       <div class="col-md-8 col-md-offset-2 text-center fh5co-heading"> <span><br>
         <br>
         </span>
-        <h2 class="min-font2">Adventres</h2>
-        <p class="min-font1">Piktyur ng paglalakbay</p>
+        <h2 class="min-font2">Adventures</h2>
+        <p class="min-font1">Capturing the blueprint of our love story, one adventure at a time!</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 animate-box">
-        <div class="wrap">
-          <div class="owl-carousel-fullwidth"> 
+        <div class="container">
+          <section id="gallery-2" class="owl-carousel js-carousel"> 
             <!--Items Start-->
             <div class="item">
               <div class="active text-center">
@@ -241,8 +246,9 @@
                 <figure> <img src="images/Adventures/Advt-13.jpg" alt="user"> </figure>
               </div>
             </div>
-          </div>
+          </section>
         </div>
+		  
       </div>
     </div>
   </div>
@@ -263,7 +269,7 @@
     <div class="col-md-12">
       <video 
 		 id="Save-the-Date-vid"
-		 src="images/Save the DATE.mp4"
+		 src="images/Save-the-DATE.mp4"
 		 width="100%" 
 		 height="80%"
 		 frameborder="5px"			 
@@ -330,7 +336,7 @@ var video = document.getElementById("Save-the-Date-vid");
 var options = {
   root: null, // Use the viewport as the root
   rootMargin: "0px", // No margin around the viewport
-  threshold: 0.3, // Trigger when 50% of the video is visible
+  threshold: 0.5, // Trigger when 50% of the video is visible
 };
 
 // Callback function to handle intersection changes
@@ -352,7 +358,45 @@ var observer = new IntersectionObserver(handleIntersection, options);
 // Start observing the video element
 observer.observe(video);
 
-
 </script>
+	
+<!--	Auto Play Carousel-->
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1, // items change number for slider display on desktop  
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
+});	
+var startItem = $('.item').length;
+
+	$(".js-carousel").owlCarousel({
+	  dots: true,
+	  loop: true,
+	  margin: 10,
+	  nav: false,
+	  startPosition: startItem,
+	  responsive: {
+		0: {
+		  dotsEach: 5,
+		  items: 1
+		},
+		600: {
+		  dotsEach: 3,
+		  items: 1
+		},
+		1200: {
+		  dotsEach: 1,
+		  items: 1
+		}
+	  }
+	});
+</script>
+
+	
+	
 </body>
 </html>

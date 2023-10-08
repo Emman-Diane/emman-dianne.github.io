@@ -1963,7 +1963,7 @@ form label {
     font-size: 14px;
   }
   .min-font1 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .min-font2 {
     font-size: 60px;
@@ -1984,7 +1984,7 @@ form label {
     font-size: 12px;
   }
   .min-font1 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .min-font2 {
     font-size: 40px;
@@ -1996,6 +1996,9 @@ form label {
 @media screen and (min-width: 769px) {
   .logo-1 {
     max-height: 180px
+  }
+  .min-font1 {
+    font-size: 20px;
   }
   .min-font3 {
     font-size: 40px;
