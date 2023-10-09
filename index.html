@@ -96,7 +96,7 @@
     </div>
   </div>
 </header>
-<div id="pop-up-msg" class="pop-up1 btn btn-primary col-xs-offset-3 col-xs-6 text-center">⬇️<strong>Keep Scrolling</strong>⬇️</div>
+<div id="pop-up-msg" class="pop-up1 btn btn-primary col-xs-offset-3 col-xs-6 text-center"><strong>Keep Scrolling</strong></div>
 <div id="fh5co-couple">
   <div class="container">
     <div class="row">
@@ -386,13 +386,34 @@
               <h2>Adventures&nbsp;</h2>
             </div>
             </a> </li>
-          <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url('images/Save the DATE-thumnail.jpg'); "> <a href="gallery.html#Save-the-Date" class="color-3">
-            <div class="case-studies-summary"> <span>Click to Watch!</span>
-              <h2>Save the DATE!&nbsp;</h2>
-            </div>
-            </a> </li>
         </ul>
       </div>
+    </div>
+  </div>
+</div>
+<!--Video-->
+<div>
+  <div>
+    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"> <span><br>
+      <br>
+      </span>
+      <h2 class="min-font2">Save the Date</h2>
+      <p class="min-font1">Join us on a journey of love and laughter<br>
+        Save the date for our unforgettable wedding adventure!</p>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <video 
+		 id="Save-the-Date-vid"
+		 src="images/Save-the-DATE.mp4"
+		 width="100%" 
+		 height="80%"
+		 frameborder="5px"			 
+		 controls
+		 poster="images/Save the DATE-thumnail2.jpg"
+		 allowfullscreen
+		></video>
+    <div><br>
     </div>
   </div>
 </div>
@@ -410,7 +431,7 @@
           </div>
         </div>
       </div>
-  <!--   QR CODES       -->
+      <!--   QR CODES       -->
       <div  id="sendcash" class="showQR col-md-12 col-md-8 col-md-offset-2 animate-box">
         <div class="container">
           <section class="owl-carousel js-carousel"> 
@@ -503,6 +524,37 @@
 <script src="js/simplyCountdown.js"></script> 
 <!-- Main --> 
 <script src="js/main.js"></script> 
+<script>	
+// Get a reference to the video element by its ID
+var video = document.getElementById("Save-the-Date-vid");
+
+// Options for the Intersection Observer
+var options = {
+  root: null, // Use the viewport as the root
+  rootMargin: "0px", // No margin around the viewport
+  threshold: 0.5, // Trigger when 50% of the video is visible
+};
+
+// Callback function to handle intersection changes
+function handleIntersection(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      // Video is in the viewport, play it
+      video.play();
+    } else {
+      // Video is out of the viewport, pause it
+      video.pause();
+    }
+  });
+}
+
+// Create an Intersection Observer instance with the callback and options
+var observer = new IntersectionObserver(handleIntersection, options);
+
+// Start observing the video element
+observer.observe(video);
+
+</script> 
 <script>
       //
       <!-- Change Target countdown date -->
