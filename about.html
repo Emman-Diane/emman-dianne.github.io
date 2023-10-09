@@ -95,6 +95,7 @@
 			</div>
 		</div>
 	</header>
+	<div id="pop-up-msg" class="pop-up1 btn btn-primary col-xs-offset-3 col-xs-6 text-center">Scroll down to<br>⬇️See More!⬇️</div>
 <div id="fh5co-couple">
 		<div class="container">
 			<div class="couple-wrap animate-box">
@@ -244,7 +245,16 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script>
+	setTimeout(function() {
+    $('#pop-up-msg').fadeOut('300');
+}, 5000); // <-- time in milliseconds
+	
+	function showIt1() {
+  document.getElementById("pop-up-msg").style.visibility = "visible";
+}
+setTimeout("showIt1()", 1500); // after 1 sec
+</script>
 	</body>
 </html>
 

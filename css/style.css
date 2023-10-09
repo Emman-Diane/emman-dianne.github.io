@@ -2063,4 +2063,15 @@ form label {
   opacity: 0;
 }
 
+/*pop up message*/
+.pop-up1 {
+ font-size: 14px;
+ visibility: hidden;
+ position: fixed; 
+ bottom:10%;
+ z-index: 100;
 
+}.pop-up-show {
+ visibility: visible;
+
+}

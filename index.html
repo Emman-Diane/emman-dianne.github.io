@@ -97,6 +97,7 @@
       </div>
     </div>
   </header>
+	<div id="pop-up-msg" class="pop-up1 btn btn-primary col-xs-offset-3 col-xs-6 text-center">Scroll down to<br>⬇️See More!⬇️</div>
   <div id="fh5co-couple">
     <div class="container">
       <div class="row">
@@ -524,6 +525,7 @@
 	  var box = document.getElementById('sendcash');
 	  var btn = document.getElementById('show-hide-btn');
 
+	  
 	  btn.addEventListener('click', function() {
 		box.classList.toggle('hideQR');
 	  });
@@ -544,6 +546,17 @@ owl.owlCarousel({
     autoplayTimeout:6000,
     autoplayHoverPause:true
 });
+//	Popup message
+setTimeout(function() {
+    $('#pop-up-msg').fadeOut('300');
+}, 5000); // <-- time in milliseconds
 </script>
+<script>
+	function showIt1() {
+  document.getElementById("pop-up-msg").style.visibility = "visible";
+}
+setTimeout("showIt1()", 1500); // after 1 sec
+</script>
+
 </body>
 </html>
