@@ -2033,7 +2033,7 @@ form label {
     background-origin: content-box;
   }
   .box-div {
-    max-width: 80%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2045,7 +2045,7 @@ form label {
     width: 25%;
   }
   .box-cash1 {
-    max-width: 70%;
+    max-width: 450px;
 	min-height: 500px;
   }
 }
