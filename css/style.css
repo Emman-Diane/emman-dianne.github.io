@@ -2077,3 +2077,43 @@ form label {
  visibility: visible;
 
 }
+
+/*FAQ button*/
+
+.faq-b1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.faq-b1.active {
+  opacity: 5;
+  visibility: visible;
+}
+.faq-b1 a {
+  padding: 3px 15px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: quicksand;
+}
+.faq-b1 a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.faq-b1 a:hover, .faq-b1 a:active, .faq-b1 a:focus {
+  text-decoration: none;
+  outline: none;
+}
