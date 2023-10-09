@@ -2053,13 +2053,13 @@ form label {
 }
 /*SHOW HIDE GIFT*/
 .showQR {  
-  transition: all 3s linear;
+  transition: all 1s linear;
   opacity: 100;
   display: block;
 }
 .hideQR {
   display: none;
-  transition: all 3s linear;
+  transition: all 1s linear;
   opacity: 0;
 }
 
