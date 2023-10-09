@@ -2012,7 +2012,7 @@ form label {
     width: 50%;
   }
   .box-div {
-/*    max-width: 100%;*/
+    /*    max-width: 100%;*/
     margin-left: auto;
     margin-right: auto;
   }
@@ -2021,7 +2021,7 @@ form label {
     width: 100%;
   }
   .box-cash1 {
-/*
+    /*
     width: 100%;
 	min-height: 350px;
 */
@@ -2035,7 +2035,7 @@ form label {
     background-origin: content-box;
   }
   .box-div {
-/*    max-width: 500px;*/
+    /*    max-width: 500px;*/
     margin-left: auto;
     margin-right: auto;
   }
@@ -2047,14 +2047,14 @@ form label {
     width: 25%;
   }
   .box-cash1 {
-/*
+    /*
     max-width: 450px;
 	min-height: 500px;
 */
   }
 }
 /*SHOW HIDE GIFT*/
-.showQR {  
+.showQR {
   transition: all 1s linear;
   opacity: 100;
   display: block;
@@ -2064,22 +2064,18 @@ form label {
   transition: all 1s linear;
   opacity: 0;
 }
-
 /*pop up message*/
 .pop-up1 {
- font-size: 14px;
- visibility: hidden;
- position: fixed; 
- bottom:10%;
- z-index: 100;
-
-}.pop-up-show {
- visibility: visible;
-
+  font-size: 14px;
+  visibility: hidden;
+  position: fixed;
+  bottom: 10%;
+  z-index: 100;
 }
-
+.pop-up-show {
+  visibility: visible;
+}
 /*FAQ button*/
-
 .faq-b1 {
   position: fixed;
   top: 20px;
