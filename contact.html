@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</header>
-
+	<div id="pop-up-msg" class="pop-up1 btn btn-primary col-xs-offset-3 col-xs-6 text-center">⬇️<strong>Keep Scrolling</strong>⬇️</div>
 	<div id="">
 		<br><br>
 		<div class="container">
@@ -209,7 +209,16 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script>
+	setTimeout(function() {
+    $('#pop-up-msg').fadeOut('300');
+}, 6000); // <-- time in milliseconds
+	
+	function showIt1() {
+  document.getElementById("pop-up-msg").style.visibility = "visible";
+}
+setTimeout("showIt1()", 1500); // after 1 sec
+</script>
 	</body>
 </html>
 
