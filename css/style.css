@@ -2095,10 +2095,10 @@ form label {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
   font-size: 16px;
   font-family: quicksand;
 }
@@ -2110,4 +2110,65 @@ form label {
 .faq-b1 a:hover, .faq-b1 a:active, .faq-b1 a:focus {
   text-decoration: none;
   outline: none;
+}
+.pulse-1 {
+	animation: pulse 1.5s ease infinite;
+}
+
+.pulse-2 {
+	animation: pulse 0.8s ease infinite;
+}
+.pulse-3 {
+	animation: pulse 1.3s ease infinite;
+}
+
+.attention-1 {
+	animation: attention 8s ease infinite;
+}
+.change-color{
+	animation: change-color 8s ease infinite
+}
+.attention-2 {
+	animation: attention 5s ease infinite;
+}
+@keyframes attention {
+  9% {
+    transform: none;
+  }
+  12% {
+    transform: scale(1.05);
+  }
+  16% {
+    transform: scale(0.95);
+  }
+  20% {
+    transform: scale(1.03);
+  }
+  24% {
+    transform: scale(1);
+  }
+}
+
+@keyframes change-color {
+  14% {
+    background: red;
+  }
+  28% {
+    background: orange;
+  }
+  42% {
+    background: yellow;
+  }
+  56% {
+    background: green;
+  }
+  70% {
+    background: blue;
+  }
+  84% {
+    background: indigo;
+  }
+  98% {
+    background: violet;
+  }
 }
