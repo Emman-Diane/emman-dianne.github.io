@@ -2014,15 +2014,7 @@ form label {
     margin-left: auto;
     margin-right: auto;
   }
-  .box-map1 {
-    height: 350px;
-    width: 100%;
-  }
   .box-cash1 {
-    /*
-    width: 100%;
-	min-height: 350px;
-*/
     margin-left: auto;
     margin-right: auto;
   }
@@ -2037,10 +2029,7 @@ form label {
     margin-left: auto;
     margin-right: auto;
   }
-  .box-map1 {
-    height: 500px;
-    width: 100%;
-  }
+
   .heart-1 {
     width: 25%;
   }
@@ -2051,6 +2040,26 @@ form label {
 */
   }
 }
+
+
+/*gallery max photo viewing on screen*/
+
+  .box-parent {
+	height: 90%;
+	max-width: 55vh;
+	margin: auto;
+  }
+
+  .box-child {
+	height: 100%;
+	width: 100%;
+	min-height: 50%;
+	min-width: 100%;
+	max-height: 90%;
+	max-width: 2500px;
+	width: 100%;
+	margin: auto;
+  }
 /*SHOW HIDE GIFT*/
 .showQR {
   transition: all 1s linear;
