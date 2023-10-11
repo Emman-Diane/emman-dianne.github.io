@@ -2006,6 +2006,11 @@ form label {
   .bg-change-1 {
     background-image: url(../images/img_bg_2b.jpg);
   }
+  .box-map1 {
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .heart-1 {
     width: 50%;
   }
@@ -2024,8 +2029,8 @@ form label {
     background-image: url(../images/img_bg_2.jpg);
     background-origin: content-box;
   }
-  .box-div {
-    /*    max-width: 500px;*/
+  .box-map1 {
+    min-height: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2082,6 +2087,9 @@ form label {
 .pop-up-show {
   visibility: visible;
 }
+
+
+
 /*FAQ button*/
 .faq-b1 {
   position: fixed;
