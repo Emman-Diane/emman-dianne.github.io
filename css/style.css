@@ -2228,26 +2228,26 @@ form label {
 }
 
 .attention-1 {
-	animation: attention 8s ease infinite;
+	animation: attention 4s ease infinite;
 }
 .change-color{
-	animation: change-color 8s ease infinite
+	animation: change-color 6s ease infinite
 }
 .attention-2 {
-	animation: attention 5s ease infinite;
+	animation: attention 6s ease infinite;
 }
 @keyframes attention {
   9% {
     transform: none;
   }
   12% {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   16% {
     transform: scale(0.95);
   }
   20% {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
   24% {
     transform: scale(1);
@@ -2256,24 +2256,24 @@ form label {
 
 @keyframes change-color {
   14% {
-    background: red;
+    background: rgba(112,112,112,1.00);
   }
   28% {
-    background: orange;
+    background: rgba(49,49,49,1.00);
   }
   42% {
-    background: yellow;
+    background: rgba(187,164,133,1.00);
   }
   56% {
-    background: green;
+    background: rgba(112,112,112,1.00);
   }
   70% {
-    background: blue;
+    background: rgba(49,49,49,1.00);
   }
   84% {
-    background: indigo;
+    background: rgba(187,164,133,1.00;
   }
   98% {
-    background: violet;
+    background: rgba(248,230,206,1.00);
   }
 }
