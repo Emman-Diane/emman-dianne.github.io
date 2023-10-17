@@ -3435,7 +3435,7 @@ tbody.collapse.in {
 }
 .nav > li {
   position: relative;
-  display: block;
+  display: inline-block;
 }
 .nav > li > a {
   position: relative;

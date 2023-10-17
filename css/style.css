@@ -2298,42 +2298,37 @@ form label {
 }
 
 
-/*bounce text*/
+/*Animate Navbar*/
+@keyframes wiggle-1 {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+li>a:hover {
+  animation: none;
+}
 
 .b1{
-  animation: fadeIn 4s infinite ;
-  -webkit-animation: fadeIn 4s infinite ;
-  -moz-animation: fadeIn 4s infinite ;
-  -o-animation: fadeIn 4s infinite ;
-  -ms-animation: fadeIn 4s infinite ;
+  display: inline-block;
+  animation: wiggle-1 2.5s infinite;
 }
 
 .b2{
-   animation: fadeIn 4s infinite .2s;
-  -webkit-animation: fadeIn 4s infinite .2s;
-  -moz-animation: fadeIn 4s infinite .2s;
-  -o-animation: fadeIn 4s infinite .2s;
-  -ms-animation: fadeIn 4s infinite .2s;
+  display: inline-block;!important
+  animation: wiggle-1 2.5s infinite .1s;
 }
 
 .b3{
-   animation: fadeIn 4s infinite .4s;
-  -webkit-animation: fadeIn 4s infinite .4s;
-  -moz-animation: fadeIn 4s infinite .4s;
-  -o-animation: fadeIn 4s infinite .4s;
-  -ms-animation: fadeIn 4s infinite .4s;
+  display: inline-block;
+  animation: wiggle-1 2.5s infinite .2s;
 }
 
 .b4{
-   animation: fadeIn 4s infinite .5s;
-  -webkit-animation: fadeIn 4s infinite .5s;
-  -moz-animation: fadeIn 4s infinite .5s;
-  -o-animation: fadeIn 4s infinite .5s;
-  -ms-animation: fadeIn 4s infinite .5s;
+  display: inline-block;
+  animation: wiggle-1 2.5s infinite .3s;
 }
 
-@keyframes fadeIn {
-  0% { opacity: .2; }
-  80% { opacity: .9; }
-  100% { opacity: 1; }
-}
+
