@@ -2253,7 +2253,7 @@ form label {
 	animation: attention 4s ease infinite .2s;
 }
 .attention-4 {
-	animation: attention 5s ease infinite .1s;
+	animation: attention 4s ease infinite .1s;
 }
 @keyframes attention {
   9% {
