@@ -2297,7 +2297,7 @@ form label {
 
 /*bounce text*/
 
-.b1 a{
+.b1{
   animation: fadeIn 4s infinite ;
   -webkit-animation: fadeIn 4s infinite ;
   -moz-animation: fadeIn 4s infinite ;
@@ -2305,7 +2305,7 @@ form label {
   -ms-animation: fadeIn 4s infinite ;
 }
 
-.b2 a{
+.b2{
    animation: fadeIn 4s infinite .2s;
   -webkit-animation: fadeIn 4s infinite .2s;
   -moz-animation: fadeIn 4s infinite .2s;
@@ -2313,7 +2313,7 @@ form label {
   -ms-animation: fadeIn 4s infinite .2s;
 }
 
-.b3 a{
+.b3{
    animation: fadeIn 4s infinite .4s;
   -webkit-animation: fadeIn 4s infinite .4s;
   -moz-animation: fadeIn 4s infinite .4s;
@@ -2321,7 +2321,7 @@ form label {
   -ms-animation: fadeIn 4s infinite .4s;
 }
 
-.b4 a{
+.b4{
    animation: fadeIn 4s infinite .5s;
   -webkit-animation: fadeIn 4s infinite .5s;
   -moz-animation: fadeIn 4s infinite .5s;
@@ -2330,7 +2330,7 @@ form label {
 }
 
 @keyframes fadeIn {
-  0% { opacity: .5; scale:.8;}
-  80% { opacity: .9; scale:1;}
-  100% { opacity: 1; scale:1;}
+  0% { opacity: .2; }
+  80% { opacity: .9; }
+  100% { opacity: 1; }
 }
