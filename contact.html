@@ -133,8 +133,7 @@
     <div class="col-md-10 col-md-offset-1 col-xs-12 col-lg-offset-2 col-lg-8">
       <h3>Contact Information</h3>
       <ul>
-        <li class="address min-font1"><strong>Nuestra Señora de Gracia Parish Church</strong> - Guadalupe Viejo, Makati City<br>
-          (Archdiocese of Manila)</li>
+        <li class="contact min-font1"><strong>VIBER </strong><span id="one-click-copy">+63 918 947 2623</span></li>
         <li class="email min-font1"><a href="mailto:dianeyuzon1524@gmail.com">dianeyuzon1524@gmail.com</a></li>
         <li class="url min-font1"><a href="https://emman-dianne.github.io">https://emman-dianne.github.io/</a></li>
       </ul>
@@ -240,7 +239,7 @@
   </div>
 <!--Promotion by Ar.Z-->
 <!--Footer end-->
-
+<div class="faq-b1 js-top attention-4"><a href="https://emman-dianne.github.io/registration.html#registration-01">RSVP</a></div>
 <div class="gototop js-top"> <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> </div>
 
 <!-- jQuery --> 
@@ -267,6 +266,24 @@
 
 <!-- Main --> 
 <script src="js/main.js"></script> 
+	
+<script>
+//Copy on click class "one-click-copy"	
+const span = document.getElementById("one-click-copy");
+
+span.onclick = function() {
+  document.execCommand("copy");
+}
+
+span.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+//Copy on click class "one-click-copy"	END	
+</script>
 <script>
 	setTimeout(function() {
     $('#pop-up-msg').fadeOut('300');
