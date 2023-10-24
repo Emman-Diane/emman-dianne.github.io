@@ -14,6 +14,7 @@
 * 	Table Style
 *
 * ======================================================= */
+
 .tg {
   border: none;
   border-collapse: collapse;
@@ -26,7 +27,7 @@
   font-family: Quicksand, sans-serif;
   font-size: 14px;
   overflow: hidden;
-  padding: 4px 5px;
+  padding: 2px 2px;
   word-break: normal;
 }
 .tg th {
@@ -42,9 +43,9 @@
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   font-family: Quicksand, Helvetica, sans-serif !important;
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
-  vertical-align: top
+  vertical-align: center;
 }
 .tg .tg-5pjh {
   background-color: rgba(0, 0, 0, 0);
@@ -79,7 +80,6 @@
 .tg .tg-iejx {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
-  ;
   font-family: Quicksand, Helvetica, sans-serif !important;
   font-size: 14px;
   text-align: left;
@@ -167,7 +167,8 @@
   text-align: left;
   vertical-align: middle
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 400px) {
   .tg {
     width: auto !important;
   }
@@ -180,68 +181,146 @@
     margin: 0px;
   }
   .tg td {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg th {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-gr6n {
-    font-size: 12px;
+    font-size: 8px;
   }
   .tg .tg-5pjh {
     ;
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-ux94 {
     ;
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-lsmh {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-aanc {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-iejx {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-hovb {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-9l1m {
-    font-size: 16px;
+    font-size: 12px;
   }
   .tg .tg-6ec3 {
-    font-size: 12px
+    font-size: 9px
   }
   .tg .tg-6b8b {
     ;
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-s26x {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-8v3g {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-ysfy {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-2t70 {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-6hjr {
-    font-size: 16px;
+    font-size: 12px;
   }
   .tg .tg-j3k2 {
     ;
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-pq0j {
-    font-size: 12px;
+    font-size: 9px;
   }
   .tg .tg-wc2q {
-    font-size: 12px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width:401) and (max-width: 515px) {
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0px;
+  }
+  .tg td {
+    font-size: 11px;
+  }
+  .tg th {
+    font-size: 11px;
+  }
+  .tg .tg-gr6n {
+    font-size: 8px;
+  }
+  .tg .tg-5pjh {
+    ;
+    font-size: 11px;
+  }
+  .tg .tg-ux94 {
+    ;
+    font-size: 11px;
+  }
+  .tg .tg-lsmh {
+    font-size: 11px;
+  }
+  .tg .tg-aanc {
+    font-size: 11px;
+  }
+  .tg .tg-iejx {
+    font-size: 11px;
+  }
+  .tg .tg-hovb {
+    font-size: 11px;
+  }
+  .tg .tg-9l1m {
+    font-size: 15px;
+  }
+  .tg .tg-6ec3 {
+    font-size: 11px
+  }
+  .tg .tg-6b8b {
+    ;
+    font-size: 11px;
+  }
+  .tg .tg-s26x {
+    font-size: 11px;
+  }
+  .tg .tg-8v3g {
+    font-size: 11px;
+  }
+  .tg .tg-ysfy {
+    font-size: 11px;
+  }
+  .tg .tg-2t70 {
+    font-size: 11px;
+  }
+  .tg .tg-6hjr {
+    font-size: 15px;
+  }
+  .tg .tg-j3k2 {
+    ;
+    font-size: 11px;
+  }
+  .tg .tg-pq0j {
+    font-size: 11px;
+  }
+  .tg .tg-wc2q {
+    font-size: 11px;
   }
 }
 
@@ -264,7 +343,7 @@
     font-size: 18px
   }
   .tg .tg-gr6n {
-    font-size: 18px
+    font-size: 16px
   }
   .tg .tg-5pjh {
     ;
