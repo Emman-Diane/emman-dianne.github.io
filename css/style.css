@@ -618,6 +618,7 @@ animation: wiggle-1 2.5s infinite;
 #fh5co-counter, #fh5co-event, .fh5co-bg {
   background-size: cover;
   background-position: top center;
+
   background-repeat: no-repeat;
   position: relative;
 }
@@ -2420,6 +2421,3 @@ div>a:hover {
 
 .wiggle {
   animation: wiggle-2 2s infinite; /* Adjust the duration and iteration as needed */
-}
-
-
