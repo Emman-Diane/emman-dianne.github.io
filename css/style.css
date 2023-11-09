@@ -168,7 +168,7 @@
   vertical-align: middle
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .tg {
     width: auto !important;
   }
@@ -246,7 +246,7 @@
   }
 }
 
-@media screen and (min-width:401) and (max-width: 515px) {
+@media screen and (min-width:421) and (max-width: 515px) {
   .tg {
     width: auto !important;
   }
